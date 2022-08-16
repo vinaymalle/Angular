@@ -1,0 +1,40 @@
+<div [ngClass]="result ? 'sample1': 'sample2'">
+    This is for directives...
+</div>
+<button (click)="change()">change color</button>
+
+<div [ngStyle]="{'color': result ? 'green': 'red'}">
+    This is for changing the style dynamically....
+</div>
+<div>
+    <input type="text" name="name" [(ngModel)]="inputValue">
+</div>
+
+<div *ngFor="let item of users; index as i">
+    <span *ngIf="i%2==0">
+        {{item}}
+    </span>
+</div>
+<!-- <div *ngIf="authentication">
+    This is confidential information...
+</div> -->
+<div *ngFor="let city of visitedCities">
+    <div [ngSwitch]="city">
+        <span *ngSwitchCase="'hyd'">Hyderabad visited...</span>
+        <span *ngSwitchCase="'chennai'">Chennai visited...</span>
+        <span *ngSwitchCase="'bng'">Banglore visited...</span>
+        <span *ngSwitchDefault>Nothing visited...</span>
+    </div>
+</div>
+
+<!-- if else block -->
+<div *ngIf="false;then thenblock else elseblock">
+    this is info...
+</div>
+
+<ng-template #thenblock>
+    This is visible only when condition satisified... it is then block...
+</ng-template>
+<ng-template #elseblock>
+    This is visible only when condition not satisified...
+</ng-template>
