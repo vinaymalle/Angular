@@ -8,6 +8,8 @@ import { BasicsComponent } from './basics/basics.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { LifecyclehooksComponent } from './lifecyclehooks/lifecyclehooks.component';
 import { TemplatedirvenformsComponent } from './templatedirvenforms/templatedirvenforms.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { TemplatedirvenformsComponent } from './templatedirvenforms/templatedirv
     BasicsComponent,
     DirectivesComponent,
     LifecyclehooksComponent,
-    TemplatedirvenformsComponent
+    TemplatedirvenformsComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
