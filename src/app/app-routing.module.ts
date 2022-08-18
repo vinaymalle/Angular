@@ -4,6 +4,7 @@ import { BasicsComponent } from './basics/basics.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { LifecyclehooksComponent } from './lifecyclehooks/lifecyclehooks.component';
 import { ParentComponent } from './parent/parent.component';
+import { SampleModule } from './sample/sample.module';
 import { TemplatedirvenformsComponent } from './templatedirvenforms/templatedirvenforms.component';
 
 const routes: Routes = [
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'parent',
     component: ParentComponent
+  },
+  {
+    path: 'sample',
+    component: SampleModule
   }
 ];
 

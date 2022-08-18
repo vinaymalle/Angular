@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parent.component.css']
 })
 export class ParentComponent implements OnInit {
-
+  userName: String = 'vinay';
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  recieveData(event:any){
+    console.log(event, "recieved data from child...");
+    
+  }
 }

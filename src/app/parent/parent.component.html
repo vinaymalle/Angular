@@ -1,5 +1,5 @@
-<p>parent works!</p>
 <div>
-    Extra info
+    parent content...{{userName}}
 </div>
-<vinay></vinay>
+<app-child [name]="userName" (childName)="recieveData($event)"></app-child>
+<!-- <sample></sample> -->

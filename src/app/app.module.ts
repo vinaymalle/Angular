@@ -10,6 +10,7 @@ import { LifecyclehooksComponent } from './lifecyclehooks/lifecyclehooks.compone
 import { TemplatedirvenformsComponent } from './templatedirvenforms/templatedirvenforms.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { SampleModule } from './sample/sample.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ChildComponent } from './child/child.component';
     LifecyclehooksComponent,
     TemplatedirvenformsComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    SampleModule
   ],
   imports: [
     BrowserModule,
