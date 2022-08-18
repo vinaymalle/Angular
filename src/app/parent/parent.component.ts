@@ -15,4 +15,5 @@ export class ParentComponent implements OnInit {
     console.log(event, "recieved data from child...");
     
   }
+
 }
