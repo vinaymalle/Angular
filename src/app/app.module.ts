@@ -11,6 +11,7 @@ import { TemplatedirvenformsComponent } from './templatedirvenforms/templatedirv
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { SampleModule } from './sample/sample.module';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { SampleModule } from './sample/sample.module';
     TemplatedirvenformsComponent,
     ParentComponent,
     ChildComponent,
-    SampleModule
+    SampleModule,
+    PipesComponent
   ],
   imports: [
     BrowserModule,
