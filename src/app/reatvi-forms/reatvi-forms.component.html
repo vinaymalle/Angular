@@ -1,0 +1,14 @@
+<div [formGroup]="userForm">
+    <div>
+        <input type="text" formControlName="userName">
+    </div>
+    <div>
+        <input type="password"  formControlName="password">
+        <span  *ngIf="userForm.controls.password?.errors && userForm.controls.password.touched">this field required</span>
+    </div>
+    <!-- <div [formGroup]="gender">
+        <input type="radio" name="gender"  formControlName="male">
+        <input type="radio" name="gender"  formControlName="female">
+    </div> -->
+    <button (click)="save()">save</button>
+</div>

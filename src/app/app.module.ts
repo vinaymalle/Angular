@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -12,6 +12,8 @@ import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
 import { SampleModule } from './sample/sample.module';
 import { PipesComponent } from './pipes/pipes.component';
+import { ExtraTopicsComponent } from './extra-topics/extra-topics.component';
+import { ReatviFormsComponent } from './reatvi-forms/reatvi-forms.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +25,15 @@ import { PipesComponent } from './pipes/pipes.component';
     ParentComponent,
     ChildComponent,
     SampleModule,
-    PipesComponent
+    PipesComponent,
+    ExtraTopicsComponent,
+    ReatviFormsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
