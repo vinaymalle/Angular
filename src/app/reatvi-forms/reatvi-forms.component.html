@@ -6,9 +6,10 @@
         <input type="password"  formControlName="password">
         <span  *ngIf="userForm.controls.password?.errors && userForm.controls.password.touched">this field required</span>
     </div>
-    <!-- <div [formGroup]="gender">
-        <input type="radio" name="gender"  formControlName="male">
-        <input type="radio" name="gender"  formControlName="female">
-    </div> -->
+    <div formGroupName="gender">
+        <input type="text" name="city"  formControlName="city">
+        <input type="radio" name="genderValue" value="male"  formControlName="genderValue">male
+        <input type="radio" name="genderValue" value="female"  formControlName="genderValue">female
+    </div>
     <button (click)="save()">save</button>
 </div>

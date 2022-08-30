@@ -13,8 +13,8 @@ export class ReatviFormsComponent implements OnInit {
     userName: new FormControl('vinay', [Validators.required, Validators.maxLength(6)]),
     password: new FormControl('2352342', Validators.required),
     gender: new FormGroup({
-      male: new FormControl(),
-      female: new FormControl()
+      city: new FormControl(),
+      genderValue: new FormControl()
     })
   })
 
