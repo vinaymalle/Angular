@@ -110,3 +110,49 @@
 
 //logic
 
+// callback
+// function demo(){
+    
+// }
+// function sample(fst, sec, demo){
+// // logic
+
+// // demo()
+// }
+
+// Promises
+
+// let promise = getDataFromServer();
+
+// remaining logic
+// ....
+
+// 1. resolve
+// 2. reject
+
+// const promise = new Promise((resolve, reject)=>{
+//     setTimeout(()=>{
+
+//         let timeAvailable = true;
+//         if(timeAvailable){
+//            resolve('class will be there...')
+//         }else{
+//            reject('class will not be there...')
+//         }
+//     }, 5000)
+// })
+// function successCase(result){
+//         console.log(result, 'this is then block');
+// }
+// function failureCase(error){
+//         console.log(error, 'this is catch block');
+// }
+// promise.then(successCase).catch(failureCase)
+
+// promise.then(userInfo)
+
+// function userInfo(){
+//     let name = 'vinay';
+//     console.log(name);
+//     //100
+// }
