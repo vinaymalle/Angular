@@ -12,10 +12,23 @@ export class ParentComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    // fetch('https://jsonplaceholder.typicode.com/users').then((result) => {
+    //    console.log(result.json());
+    // }).catch((error)=>{
+    //   console.log(error, 'this is catch block...');
+      
+    // })
+  //  let value =  this.recieveData()
+    // users(){
+    //   //logic..
+    //   throw error;
+    //   return promises;
+    // }
+
   }
   recieveData(event:any){
     console.log(event, "recieved data from child...");
-    
+    // return 'vina'
   }
   accessElem(){
     //window
