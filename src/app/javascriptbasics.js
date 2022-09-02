@@ -156,3 +156,75 @@
 //     console.log(name);
 //     //100
 // }
+
+// let user1 = {
+//     name: 'hareesh',
+//     age: 23
+// }
+
+// let user2 = {
+//     city: 'hyderabad',
+//     mobile: 7934349834
+// }
+
+//spread operator
+// ...varName
+
+// user1 = {...user1, ...user2};
+
+// console.log(user1);
+// console.log(user2);
+
+let userNames = ["Mahesh", "Balu", "Raghu"];
+
+let qualifications = ['Btech', "Bsc", "Bpharm"];
+
+// console.log(userNames, qualifications);
+
+// let totalInfo = [...userNames, ...qualifications];
+
+// console.log(totalInfo);
+
+// array mathods
+
+// 1. forEach
+//2. map
+//3. filter
+//4. find
+//5. join
+
+// for(let i = 0; i < userNames.length; i++){
+//     console.log(userNames[i]);
+// }
+
+// for(let element of userNames){
+//     console.log(element);
+// }
+
+// userNames.forEach((element, count)=>{
+//     console.log(element, count);
+// })
+
+// let indexValues = userNames.map((item, index)=>{
+//     return item + " Mallela"
+//     // console.log(item , index);
+// })
+
+// console.log(indexValues);
+
+let userAges = [30, 12, 21, 19, 14, 17, 40];
+
+// let newUsers = userAges.map((item, index)=>{
+//     if(item > 18){
+//         return item;
+//     }else{
+//         return 0;
+//     }
+// })
+
+// let newUsers = userNames.filter((user, index)=>{
+//     if(index == 1){
+//         return user;
+//     }
+// })
+// console.log(newUsers);
