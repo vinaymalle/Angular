@@ -14,6 +14,7 @@ import { SampleModule } from './sample/sample.module';
 import { PipesComponent } from './pipes/pipes.component';
 import { ExtraTopicsComponent } from './extra-topics/extra-topics.component';
 import { ReatviFormsComponent } from './reatvi-forms/reatvi-forms.component';
+import { ArraymethodsComponent } from './arraymethods/arraymethods.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { ReatviFormsComponent } from './reatvi-forms/reatvi-forms.component';
     SampleModule,
     PipesComponent,
     ExtraTopicsComponent,
-    ReatviFormsComponent
+    ReatviFormsComponent,
+    ArraymethodsComponent
   ],
   imports: [
     BrowserModule,
