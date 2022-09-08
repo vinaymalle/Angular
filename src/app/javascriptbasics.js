@@ -160,14 +160,6 @@ import getUserInfo, { getInfo } from "./newJavascriptFile";
 //     console.log(name);
 //     //100
 // }
-<<<<<<< HEAD
-getUserInfo()
-getInfo()
-=======
-
-// let user1 = {
-//     name: 'hareesh',
-//     age: 23
 // }
 
 // let user2 = {
@@ -236,4 +228,3 @@ let userAges = [30, 12, 21, 19, 14, 17, 40];
 //     }
 // })
 // console.log(newUsers);
->>>>>>> 92013e3b7ff2c08db5d73318c76a5fbad076cddd
