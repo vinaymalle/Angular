@@ -1,7 +1,11 @@
+
 //static typed
 // int user = 34534;
 // float city = '';
 // string high = ''
+
+import getUserInfo, { getInfo } from "./newJavascriptFile";
+
 
 // types
 // 1. boolean
@@ -156,10 +160,6 @@
 //     console.log(name);
 //     //100
 // }
-
-// let user1 = {
-//     name: 'hareesh',
-//     age: 23
 // }
 
 // let user2 = {
