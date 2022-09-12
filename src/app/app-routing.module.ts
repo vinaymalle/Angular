@@ -5,6 +5,7 @@ import { BasicsComponent } from './basics/basics.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { ExtraTopicsComponent } from './extra-topics/extra-topics.component';
 import { LifecyclehooksComponent } from './lifecyclehooks/lifecyclehooks.component';
+import { ObservableComponent } from './observable/observable.component';
 import { ParentComponent } from './parent/parent.component';
 import { PipesComponent } from './pipes/pipes.component';
 import { ReatviFormsComponent } from './reatvi-forms/reatvi-forms.component';
@@ -51,6 +52,10 @@ const routes: Routes = [
   {
     path: 'arrayMethods',
     component: ArraymethodsComponent
+  },
+  {
+    path: 'observable',
+    component: ObservableComponent
   },
   {
     path: '**',
