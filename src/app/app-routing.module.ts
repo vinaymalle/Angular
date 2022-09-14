@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ArraymethodsComponent } from './arraymethods/arraymethods.component';
+import { CustomepipeComponent } from './assigments/customepipe/customepipe.component';
 import { BasicsComponent } from './basics/basics.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { ExtraTopicsComponent } from './extra-topics/extra-topics.component';
@@ -56,6 +57,10 @@ const routes: Routes = [
   {
     path: 'observable',
     component: ObservableComponent
+  },
+  {
+    path: 'customepipe',
+    component: CustomepipeComponent
   },
   {
     path: '**',

@@ -17,6 +17,7 @@ import { ReatviFormsComponent } from './reatvi-forms/reatvi-forms.component';
 import { ArraymethodsComponent } from './arraymethods/arraymethods.component';
 import { ObservableComponent } from './observable/observable.component';
 import {HttpClientModule} from '@angular/common/http';
+import { CustomepipeComponent } from './assigments/customepipe/customepipe.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import {HttpClientModule} from '@angular/common/http';
     ExtraTopicsComponent,
     ReatviFormsComponent,
     ArraymethodsComponent,
-    ObservableComponent
+    ObservableComponent,
+    CustomepipeComponent
   ],
   imports: [
     BrowserModule,
