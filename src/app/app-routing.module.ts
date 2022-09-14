@@ -4,6 +4,7 @@ import { ArraymethodsComponent } from './arraymethods/arraymethods.component';
 import { AuthenticationguardGuard } from './assigments/authenticationguard.guard';
 import { CheckguardGuard } from './assigments/checkguard.guard';
 import { CustomepipeComponent } from './assigments/customepipe/customepipe.component';
+import { ResolveguardGuard } from './assigments/resolveguard.guard';
 import { BasicsComponent } from './basics/basics.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { ExtraTopicsComponent } from './extra-topics/extra-topics.component';
@@ -44,7 +45,8 @@ const routes: Routes = [
   },
   {
     path: 'pipes',
-    component: PipesComponent
+    component: PipesComponent,
+    resolve:[ResolveguardGuard]
   },
   {
     path: 'extraTopics',
