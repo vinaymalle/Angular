@@ -12,11 +12,11 @@ export class CustomepipeComponent implements OnInit {
       city : "hyd"
     },
     {
-      name : "sasi",
+      name : "raja",
       city : "hyd"
     },
     {
-      name : "sasi",
+      name : "aaryan",
       city : "hyd"
     }
   ]
