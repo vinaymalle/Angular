@@ -1,1 +1,4 @@
 <p>customepipe works!</p>
+<div *ngFor = "let user of userinfo">
+    {{user.name | attachpipe}}
+</div>

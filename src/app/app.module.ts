@@ -18,6 +18,7 @@ import { ArraymethodsComponent } from './arraymethods/arraymethods.component';
 import { ObservableComponent } from './observable/observable.component';
 import {HttpClientModule} from '@angular/common/http';
 import { CustomepipeComponent } from './assigments/customepipe/customepipe.component';
+import { AttachpipePipe } from './assigments/attachpipe.pipe';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CustomepipeComponent } from './assigments/customepipe/customepipe.compo
     ReatviFormsComponent,
     ArraymethodsComponent,
     ObservableComponent,
-    CustomepipeComponent
+    CustomepipeComponent,
+    AttachpipePipe
   ],
   imports: [
     BrowserModule,
