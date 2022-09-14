@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ArraymethodsComponent } from './arraymethods/arraymethods.component';
+import { AuthenticationGuard } from './authentication.guard';
 import { BasicsComponent } from './basics/basics.component';
+import { CutomepipeComponent } from './cutomepipe/cutomepipe.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { ExtraTopicsComponent } from './extra-topics/extra-topics.component';
 import { LifecyclehooksComponent } from './lifecyclehooks/lifecyclehooks.component';
@@ -11,6 +13,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { ReatviFormsComponent } from './reatvi-forms/reatvi-forms.component';
 import { SampleModule } from './sample/sample.module';
 import { TemplatedirvenformsComponent } from './templatedirvenforms/templatedirvenforms.component';
+import { UserDetailsGuard } from './user-details.guard';
 
 const routes: Routes = [
   {
@@ -31,11 +34,13 @@ const routes: Routes = [
   },
   {
     path: 'parent',
-    component: ParentComponent
+    component: ParentComponent,
+    canActivate: [AuthenticationGuard]
   },
   {
     path: 'sample',
-    component: SampleModule
+    component: SampleModule,
+    resolve: [UserDetailsGuard]
   },
   {
     path: 'pipes',
@@ -56,6 +61,10 @@ const routes: Routes = [
   {
     path: 'observable',
     component: ObservableComponent
+  },
+  {
+    path: 'customepipes',
+    component: CutomepipeComponent
   },
   {
     path: '**',

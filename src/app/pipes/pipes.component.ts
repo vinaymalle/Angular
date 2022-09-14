@@ -20,7 +20,6 @@ export class PipesComponent implements OnInit {
     console.log(this.user.getTodayDate());
     console.log(this.user.userData);
     
-    
   }
 
 }

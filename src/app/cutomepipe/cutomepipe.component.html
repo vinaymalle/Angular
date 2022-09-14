@@ -1,0 +1,4 @@
+<div *ngFor = "let user of userInfo">
+  name: {{user.name | attachcontent : user.id : 'sample information'}}
+</div>
+<button type="button" class="btn btn-success">Save</button>

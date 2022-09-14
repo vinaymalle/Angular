@@ -17,6 +17,8 @@ import { ReatviFormsComponent } from './reatvi-forms/reatvi-forms.component';
 import { ArraymethodsComponent } from './arraymethods/arraymethods.component';
 import { ObservableComponent } from './observable/observable.component';
 import {HttpClientModule} from '@angular/common/http';
+import { CutomepipeComponent } from './cutomepipe/cutomepipe.component';
+import { AttachcontentPipe } from './attachcontent.pipe';
 
 @NgModule({
   declarations: [
@@ -32,7 +34,9 @@ import {HttpClientModule} from '@angular/common/http';
     ExtraTopicsComponent,
     ReatviFormsComponent,
     ArraymethodsComponent,
-    ObservableComponent
+    ObservableComponent,
+    CutomepipeComponent,
+    AttachcontentPipe
   ],
   imports: [
     BrowserModule,
