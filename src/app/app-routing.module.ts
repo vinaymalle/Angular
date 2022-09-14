@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ArraymethodsComponent } from './arraymethods/arraymethods.component';
+import { AuthenticationguardGuard } from './assigments/authenticationguard.guard';
 import { CustomepipeComponent } from './assigments/customepipe/customepipe.component';
 import { BasicsComponent } from './basics/basics.component';
 import { DirectivesComponent } from './directives/directives.component';
@@ -16,7 +17,8 @@ import { TemplatedirvenformsComponent } from './templatedirvenforms/templatedirv
 const routes: Routes = [
   {
     path: 'basic',
-    component: BasicsComponent
+    component: BasicsComponent,
+    canActivate:[AuthenticationguardGuard]
   },
   {
     path: 'directives',
