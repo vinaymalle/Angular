@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { ArraymethodsComponent } from './arraymethods/arraymethods.component';
 import { AuthenticationGuard } from './authentication.guard';
 import { BasicsComponent } from './basics/basics.component';
+import { CheckGuard } from './check.guard';
 import { CutomepipeComponent } from './cutomepipe/cutomepipe.component';
 import { DirectivesComponent } from './directives/directives.component';
 import { ExtraTopicsComponent } from './extra-topics/extra-topics.component';
@@ -13,7 +14,7 @@ import { PipesComponent } from './pipes/pipes.component';
 import { ReatviFormsComponent } from './reatvi-forms/reatvi-forms.component';
 import { SampleModule } from './sample/sample.module';
 import { TemplatedirvenformsComponent } from './templatedirvenforms/templatedirvenforms.component';
-import { UserDetailsGuard } from './user-details.guard';
+import { UserPermissionGuard } from './user-permission.guard';
 
 const routes: Routes = [
   {
@@ -40,11 +41,12 @@ const routes: Routes = [
   {
     path: 'sample',
     component: SampleModule,
-    resolve: [UserDetailsGuard]
+    canDeactivate: [CheckGuard]
   },
   {
     path: 'pipes',
-    component: PipesComponent
+    component: PipesComponent,
+    resolve: [UserPermissionGuard]
   },
   {
     path: 'extraTopics',
