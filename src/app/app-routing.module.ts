@@ -69,6 +69,10 @@ const routes: Routes = [
     component: CutomepipeComponent
   },
   {
+    path: 'login',
+    loadChildren: () => import('./authentication/authentication.module').then((m) => m.AuthenticationModule)
+  },
+  {
     path: '**',
     redirectTo: 'pipes'
   }
