@@ -19,6 +19,7 @@ import { ObservableComponent } from './observable/observable.component';
 import {HttpClientModule} from '@angular/common/http';
 import { CutomepipeComponent } from './cutomepipe/cutomepipe.component';
 import { AttachcontentPipe } from './attachcontent.pipe';
+import { ViewChangeDirective } from './view-change.directive';
 
 @NgModule({
   declarations: [
@@ -36,7 +37,8 @@ import { AttachcontentPipe } from './attachcontent.pipe';
     ArraymethodsComponent,
     ObservableComponent,
     CutomepipeComponent,
-    AttachcontentPipe
+    AttachcontentPipe,
+    ViewChangeDirective
   ],
   imports: [
     BrowserModule,
